@@ -6,7 +6,7 @@ const folderName = `${path.basename(process.cwd())}/`;
 const mode = process.env.NODE_ENV === "production" ? "production" : "development";
 const base = mode === "production" && isGitHubPages ? `/${folderName}` : "/";
 
-console.log(`Valor de ME_GUSTAN_LOS_AGUACATES ->${process.env.ME_GUSTAN_LOS_AGUACATES}`);
+console.log(`Estoy en una rama -> Valor de ME_GUSTAN_LOS_AGUACATES ->${process.env.ME_GUSTAN_LOS_AGUACATES}`);
 
 export default defineConfig({
   root: "src",
